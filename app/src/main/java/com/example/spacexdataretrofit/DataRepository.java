@@ -5,22 +5,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class DataRepository {
 
-    @SerializedName("rocket")
-    @Expose
-    public Rocket rocket;
-
-    @SerializedName("first_stage")
-    @Expose
-    public FirstStage firstStage;
-
-    @SerializedName("launch_site")
-    @Expose
-    public LaunchSite launchSite;
-
-    @SerializedName("links")
-    @Expose
-    public Links links;
-
     @SerializedName("flight_number")
     @Expose
     private Integer flightNumber;
@@ -53,7 +37,7 @@ public class DataRepository {
     private boolean tbd;
     @SerializedName("launch_window")
     @Expose
-    private boolean launchWindow;
+    private Integer launchWindow;
     @SerializedName("details")
     @Expose
     private String details;
@@ -64,7 +48,9 @@ public class DataRepository {
     @Expose
     private String staticFireDateUnix;
     @SerializedName("crew")
+    @Expose
     private boolean crew;
+
 
     public boolean isCrew() { return crew; }
 
@@ -114,7 +100,7 @@ public class DataRepository {
         return tbd;
     }
 
-    public boolean isLaunchWindow() {
+    public Integer getLaunchWindow() {
         return launchWindow;
     }
 }

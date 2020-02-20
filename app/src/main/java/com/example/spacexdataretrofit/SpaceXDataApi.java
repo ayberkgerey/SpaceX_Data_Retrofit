@@ -11,5 +11,7 @@ public interface SpaceXDataApi {
     @GET("v2/launches")
     Call<List<DataRepository>> getDataRepository();
 
+    @GET("v2/launches")
+    Call<List<Rocket>> getRockets();
 
 }
