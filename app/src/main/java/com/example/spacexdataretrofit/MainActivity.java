@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         RetrofitInit();
         getDatas();
+
     }
 
     private void RetrofitInit(){
@@ -63,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
                     content += "tbd : " + data.isTbd() + "\n";
                     content += "launch_window : "+ data.getLaunchWindow() + "\n\n";
 
+                    content += "\tROCKET\n";
+                    content += "\trocket_id : " + data.rocket.getRocketId()+"\n";
+                    content += "\trocket_name : " + data.rocket.getRocketName()+"\n";
+                    content += "\trocket_type : " + data.rocket.getRocketType()+ "\n\n";
+
+                    content += "\n\n\n";
                     textView.append(content);
                 }
             }
@@ -72,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 
 
 

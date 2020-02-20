@@ -5,6 +5,9 @@ import com.google.gson.annotations.SerializedName;
 
 public class DataRepository {
 
+    @SerializedName("rocket")
+    @Expose
+    public Rocket rocket;
     @SerializedName("flight_number")
     @Expose
     private Integer flightNumber;
