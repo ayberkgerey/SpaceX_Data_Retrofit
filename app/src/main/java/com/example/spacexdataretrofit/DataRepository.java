@@ -17,10 +17,6 @@ public class DataRepository {
     @Expose
     public Links links;
 
-    @SerializedName("first_stage")
-    @Expose
-    public FirstStage firstStage;
-
     @SerializedName("flight_number")
     @Expose
     private Integer flightNumber;

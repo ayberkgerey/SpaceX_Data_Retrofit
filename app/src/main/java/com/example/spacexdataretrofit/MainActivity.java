@@ -69,18 +69,25 @@ public class MainActivity extends AppCompatActivity {
                     content += "\trocket_name : " + data.rocket.getRocketName()+"\n";
                     content += "\trocket_type : " + data.rocket.getRocketType()+ "\n\n";
 
-                    /*content += "\tFirst Stage\n";
-                    content += "\tcore_serial : "+ data.firstStage.getCoreSerial()+"\n";
-                    content += "\tflight : " + data.firstStage.getFlight()+"\n";
-                    content += "\tblock : " + data.firstStage.getBlock()+"\n";
-                    content += "\tgridfins : " + data.firstStage.isGridfins()+"\n";
-                    content += "\tlegs : " + data.firstStage.isLegs()+"\n";
-                    content += "\treused : " + data.firstStage.isReused()+"\n";
-                    content += "\tland_success : " + data.firstStage.isLandSuccess()+"\n";
-                    content += "\tlanding_intent : " + data.firstStage.isLandingIntent()+"\n";
-                    content += "\tlanding_type : " + data.firstStage.getLandingType()+"\n";
-                    content += "\tlanding_vehicle : " + data.firstStage.getLandingVehicle()+"\n\n";
-                    */
+                    content += "\tLaunch Site\n";
+                    content += "\tsite_id : " + data.launchSite.getSiteId()+"\n";
+                    content += "\tsite_name : "+data.launchSite.getSiteName()+"\n";
+                    content += "\tsite_name_long : " + data.launchSite.getSiteNameLong()+"\n";
+                    content += "\tlaunch_success : " +data.launchSite.isLaunchSuccess()+"\n";
+
+                    content += "\tLinks\n";
+                    content += "\tmission_patch : " + data.links.getMissionPatch()+"\n";
+                    content += "\tmission_patch_small : " + data.links.getMissionPatchSmall()+"\n";
+                    content += "\treddit_campaign : " + data.links.getRedditCampaign()+"\n";
+                    content += "\treddit_launch : " + data.links.getRedditLaunch()+"\n";
+                    content += "\treddit_recovery : " + data.links.getRedditRecovery()+"\n";
+                    content += "\treddit_media : " + data.links.getRedditMedia()+"\n";
+                    content += "\tpresskit : " + data.links.getPresskit()+"\n";
+                    content += "\tarticle_link : " + data.links.getArticleLink()+"\n";
+                    content += "\twikipedia : " + data.links.getWikipedia()+"\n";
+                    content += "\tvideo_link : " + data.links.getVideoLink()+"\n";
+                    content += "\tyoutube_id : " + data.links.getYoutubeId()+"\n";
+
                     content += "\n\n\n";
                     textView.append(content);
                 }
