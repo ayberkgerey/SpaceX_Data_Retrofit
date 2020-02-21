@@ -69,6 +69,18 @@ public class MainActivity extends AppCompatActivity {
                     content += "\trocket_name : " + data.rocket.getRocketName()+"\n";
                     content += "\trocket_type : " + data.rocket.getRocketType()+ "\n\n";
 
+                    /*content += "\tFirst Stage\n";
+                    content += "\tcore_serial : "+ data.firstStage.getCoreSerial()+"\n";
+                    content += "\tflight : " + data.firstStage.getFlight()+"\n";
+                    content += "\tblock : " + data.firstStage.getBlock()+"\n";
+                    content += "\tgridfins : " + data.firstStage.isGridfins()+"\n";
+                    content += "\tlegs : " + data.firstStage.isLegs()+"\n";
+                    content += "\treused : " + data.firstStage.isReused()+"\n";
+                    content += "\tland_success : " + data.firstStage.isLandSuccess()+"\n";
+                    content += "\tlanding_intent : " + data.firstStage.isLandingIntent()+"\n";
+                    content += "\tlanding_type : " + data.firstStage.getLandingType()+"\n";
+                    content += "\tlanding_vehicle : " + data.firstStage.getLandingVehicle()+"\n\n";
+                    */
                     content += "\n\n\n";
                     textView.append(content);
                 }

@@ -8,6 +8,19 @@ public class DataRepository {
     @SerializedName("rocket")
     @Expose
     public Rocket rocket;
+
+    @SerializedName("launch_site")
+    @Expose
+    public LaunchSite launchSite;
+
+    @SerializedName("links")
+    @Expose
+    public Links links;
+
+    @SerializedName("first_stage")
+    @Expose
+    public FirstStage firstStage;
+
     @SerializedName("flight_number")
     @Expose
     private Integer flightNumber;
